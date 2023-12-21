@@ -1,0 +1,116 @@
+.buy{
+    position: relative;
+    background-color: #fff;
+    z-index: 2;
+    padding: 60px 0 100px 0;
+    h4{
+        font-size: 34px;
+        font-weight: 600;
+        color: #000;
+        text-align: center;
+     }
+    .buy_wrapper{
+        padding-top: 60px;
+         .buy_wrap{
+            height: 400px;
+            width: 100%;
+            border: 1px solid #c3c3c3c6;
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+            .card_img{
+                // &:hover .swiper-button-prev{
+                //   display: block;
+                //   transition: all linear .5s;
+                // }
+                 .card_preview{
+                    height: 200px;
+                    width: 100%;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                 }
+                 .swiper-button-prev{
+                    height: 30px;
+                    width: 30px;
+                    background-color: #f3f3f3bf;
+                    border-radius: 50%;
+                    &::after{
+                        font-size: 15px;
+                        color: #504d4d;
+                    }
+                 }
+                 .swiper-button-next{
+                    height: 30px;
+                    width: 30px;
+                    background-color: #f3f3f3bf;
+                    border-radius: 50%;
+
+                    &::after{
+                        font-size: 15px;
+                        color: #504d4d;
+                    }
+                 }
+                 .swiper-pagination{
+                    text-align: end;
+                    padding-right: 10px;
+                    .swiper-pagination-bullet{
+                        background-color: #2257c9;
+                    }
+                 }
+            }
+            .card_content{
+                padding: 15px;
+                 h5{
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: $blackColor;
+                    line-height: 22px;
+                 }
+                 p{
+                    color: rgb(68, 67, 67);
+                    line-height: 20px;
+                    padding-top: 5px;
+                 }
+                 .pricing{
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: $primaryColor;
+                    padding-top: 10px;
+                    span{
+                        font-weight: 500;
+                        font-size: 18px;
+                    }
+                 }
+                 .buy_btn{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    padding: 10px 15px;
+                    width: 100%;
+                    cursor: pointer;
+                    .btn{
+                        height:35px;
+                        width: 100%;
+                        background-color: $whiteColor;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: $primaryColor;
+                        font-size: 15px;
+                        font-weight: 400;
+                        border-radius: 8px;
+                        border: 1px solid $primaryColor;
+                        &:hover{
+                            background-color: #0c436a;
+                            color: $whiteColor;
+                        }
+                    }
+
+                 }
+            }
+         }
+    }
+}

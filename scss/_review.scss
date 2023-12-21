@@ -1,0 +1,155 @@
+.review {
+  padding: 100px 0;
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+
+  .review_wrapper {
+    margin-bottom: 50px;
+    .rev_tag {
+      text-align: center;
+      span {
+        font-size: 14px;
+        font-weight: 500;
+        color: $primaryColor;
+        background-color: rgba(162, 178, 201, 0.13);
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 5px 30px;
+        border-radius: 35px;
+      }
+    }
+    h2 {
+      font-size: 45px;
+      font-weight: 700;
+      color: #032a3e;
+      text-align: center;
+      padding-top: 30px;
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: 400;
+      color: #032a3eb6;
+      text-align: center;
+      padding-top: 25px;
+      line-height: 24px;
+    }
+  }
+}
+.review_slider {
+  width: 630px;
+  margin: 0 auto;
+  .review_item {
+    background-color: #fff;
+    height: 320px;
+    width: 100%;
+    position: relative;
+    // box-shadow: 0 10px 35px -3px rgba(0,0,0,0.1);
+    border: 1px solid #c3c3c3b7;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    overflow: hidden;
+    padding: 20px;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      height: 7px;
+      background-color: #085a845f;
+      width: 65%;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+    .item_content {
+      width: 100%;
+      margin-top: 30px;
+      .review_text {
+        text-align: center;
+        font-size: 15px;
+        font-weight: 400;
+        color: #1f2122;
+        line-height: 22px;
+        span {
+          font-size: 18px;
+          color: $blackColor;
+        }
+      }
+      .reviewer_profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        .profile_img {
+          img {
+            height: 70px;
+            width: 70px;
+            object-fit: cover;
+            border-radius: 50%;
+          }
+        }
+        .content_div {
+          padding-left: 10px;
+        }
+        .profile_name {
+          font-size: 20px;
+          font-weight: 700;
+          color: #4e4d4d;
+          font-family: $font-3;
+        }
+        .profile_desgination {
+          font-size: 14px;
+          font-weight: 400;
+          color: #424141;
+          span {
+            font-weight: 500;
+            color: $blackColor;
+          }
+        }
+      }
+    }
+    .item_bottom {
+      height: 48px;
+      border-top: 1px solid #c3c3c3b7;
+      background-color: #085b840e;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .star_contant {
+        i {
+          color: #ef9c1ff0;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .swiper-button-prev {
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    box-shadow: 0 10px 35px -3px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    &::after {
+      font-size: 18px;
+      color: #504d4d;
+    }
+  }
+  .swiper-button-next {
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    box-shadow: 0 10px 35px -3px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+
+    &::after {
+      font-size: 18px;
+      color: #504d4d;
+    }
+  }
+}
