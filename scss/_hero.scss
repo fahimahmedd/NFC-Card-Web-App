@@ -10,7 +10,11 @@
     // z-index: -1;
 }
 .sticky-hero{
-    opacity: .2;
+    opacity: .3;
+    transition: all linear .5s;
+}
+.sticky-hero-2{
+    opacity: 0;
     transition: all linear .5s;
 }
 .hero_wrapper{
@@ -35,6 +39,8 @@
             text-transform: uppercase;
             font-weight: 900;
             margin: 25px 0 15px 0;
+            // font-family: "Kalnia", serif;
+
           }
         p{
             font-size: 15px;

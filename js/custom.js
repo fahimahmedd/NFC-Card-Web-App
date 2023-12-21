@@ -73,18 +73,27 @@ $(function () {
 
   // Header Sticky 
   $(window).scroll(function(){
-    if ($(this).scrollTop() > 140) {
+    if ($(this).scrollTop() > 200) {
        $('.header').addClass('sticky-nav');
     } else {
        $('.header').removeClass('sticky-nav');
     }
   });
+
   // Hero Section 
   $(window).scroll(function(){
     if ($(this).scrollTop() > 100) {
        $('.hero').addClass('sticky-hero');
     } else {
        $('.hero').removeClass('sticky-hero');
+    }
+  });
+ // Hero Section 
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 560) {
+       $('.sticky-hero').addClass('sticky-hero-2');
+    } else {
+       $('.sticky-hero').removeClass('sticky-hero-2');
     }
   });
 
