@@ -1,6 +1,6 @@
 .mobile{
     position: relative;
-    background-color: #fff;
+    background-color: #f7f7f7;
     z-index: 2;
     padding: 200px 0 60px 0;
 }
@@ -26,9 +26,6 @@
             top: 10px;
             transform: translateX(-50%);
         }
-
-        
-      
         .info_item{
             justify-content: space-between;
             display: flex;
@@ -118,7 +115,7 @@
             padding: 10px 20px;
            .profile{
             height: 100%;
-            background-color: #f3f3f3;
+            background-color: #ffffff;
             width: 100%;
             border-radius: 30px;
             // background-image: url(../images/profile.png);

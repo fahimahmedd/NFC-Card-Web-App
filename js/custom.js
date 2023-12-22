@@ -21,20 +21,11 @@ $(function () {
   });
 
 
-  var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 30,
-    loop: true,
+  var swiper = new Swiper(".cardSwipper", {
+    spaceBetween: 5,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
-    },
-    // pagination: {
-    //   el: ".swiper-pagination",
-    //   clickable: true,
-    // },
-    autoplay: {
-      delay: 3500,
-      disableOnInteraction: false,
     },
   });
 
@@ -89,13 +80,13 @@ $(function () {
     }
   });
  // Hero Section 
-  $(window).scroll(function(){
-    if ($(this).scrollTop() > 560) {
-       $('.sticky-hero').addClass('sticky-hero-2');
-    } else {
-       $('.sticky-hero').removeClass('sticky-hero-2');
-    }
-  });
+  // $(window).scroll(function(){
+  //   if ($(this).scrollTop() > 560) {
+  //      $('.sticky-hero').addClass('sticky-hero-2');
+  //   } else {
+  //      $('.sticky-hero').removeClass('sticky-hero-2');
+  //   }
+  // });
 
 });
 
