@@ -40,26 +40,58 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    i{
-                        color: #238EA6;
-                        font-size: 12px;
-                        margin-top: 1.78px;
-                        margin-left: 1px;
+                    position: relative;
+                }
+                .clr_1{
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        height: 12px;
+                        width: 12px;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        border-radius: 50%;
+                        background-color: #238EA6;
                     }
                 }
                 .clr_2{
-                    i{
-                        color: #EB9617;
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        height: 12px;
+                        width: 12px;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        border-radius: 50%;
+                        background-color: #EB9617;
                     }
                 }
                 .clr_3{
-                    i{
-                        color: #ab2e6aca;
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        height: 12px;
+                        width: 12px;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        border-radius: 50%;
+                        background-color: #ab2e6aca;
                     }
                 }
                 .clr_4{
-                    i{
-                        color: #6c26b1af;
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        height: 12px;
+                        width: 12px;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        border-radius: 50%;
+                        background-color: #6c26b1af;
                     }
                 }
             }

@@ -55,6 +55,7 @@
                 color: $whiteColor;
                 text-align: center;
                 padding-bottom: 80px;
+                font-family: "Merriweather",serif;
             }
             .footer_wrap {
                 p {
@@ -124,9 +125,9 @@
         background-color: #283752;
         padding: 10px 0;
         span {
-            color: $whiteColor;
-            font-size: 15px;
-            font-weight: 400;
+            color: #b0b0b0;
+            font-size: 14px;
+            font-weight: 300;
         }
     }
 }

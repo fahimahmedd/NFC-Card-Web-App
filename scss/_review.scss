@@ -132,24 +132,35 @@
   .swiper-button-prev {
     height: 40px;
     width: 40px;
-    background-color: #fff;
-    box-shadow: 0 10px 35px -3px rgba(0, 0, 0, 0.1);
+    background-color: $primaryColor;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 50%;
+    &:hover{
+      background-color: $whiteColor;
+    }
+    &:hover::after{
+      color: $primaryColor;
+    }
     &::after {
       font-size: 18px;
-      color: #504d4d;
+      color: #fff;
     }
   }
   .swiper-button-next {
     height: 40px;
     width: 40px;
-    background-color: #fff;
-    box-shadow: 0 10px 35px -3px rgba(0, 0, 0, 0.1);
+    background-color: $primaryColor;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 50%;
-
+    &:hover{
+      background-color: $whiteColor;
+    }
+    &:hover::after{
+      color: $primaryColor;
+    }
     &::after {
       font-size: 18px;
-      color: #504d4d;
+      color: $whiteColor;
     }
   }
 }
