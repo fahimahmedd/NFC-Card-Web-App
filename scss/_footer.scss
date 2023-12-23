@@ -10,7 +10,10 @@
             border-right: 1px solid #28375259;
             width: 100%;
             padding: 20px 0;
- 
+            &:hover{
+                background-color: #fff;
+                transition: all linear .3s;
+            }
             img {
                 height: 60px;
                 width: 60px; 
@@ -22,6 +25,8 @@
                 font-weight: 500;
                 color: #283752;
                 padding-top: 20px;
+                font-family: "Merriweather",serif;
+                
             }
 
             .f_text {

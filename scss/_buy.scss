@@ -1,133 +1,127 @@
-.buy{
-    position: relative;
-    background-color: #f7f7f7;
-    z-index: 2;
-    padding: 60px 0 100px 0;
-    h4{
-        font-size: 34px;
-        font-weight: 600;
-        color: #000;
-        text-align: center;
-     }
-    .buy_wrapper{
-        padding-top: 60px;
-         .buy_wrap{
-            height: 350px;
+.buy {
+  position: relative;
+  background-color: #f7f7f7;
+  z-index: 2;
+  padding: 60px 0 100px 0;
+  h4 {
+    font-size: 34px;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+  }
+  .buy_wrapper {
+    padding-top: 60px;
+    .buy_wrap {
+      height: 350px;
+      width: 100%;
+      box-shadow: rgba(0, 0, 0, 0.119) 0px 3px 6px,
+        rgba(0, 0, 0, 0.141) 0px 3px 6px;
+      border-radius: 16px;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 35px;
+      .card_img {
+        position: relative;
+        overflow: hidden;
+        &:hover .swiper-button-next {
+          right: 10px;
+          transition: all 0.5s ease-in-out;
+        }
+        &:hover .swiper-button-prev {
+          left: 10px;
+          transition: all 0.5s ease-in-out;
+        }
+        .card_preview {
+          height: 200px;
+          width: 100%;
+          img {
+            height: 100%;
             width: 100%;
-            box-shadow: rgba(0, 0, 0, 0.119) 0px 3px 6px, rgba(0, 0, 0, 0.141) 0px 3px 6px;
-            border-radius: 16px;
-            overflow: hidden;
-            position: relative;
-            margin-bottom: 35px;
-            .card_img{
-                // &:hover .swiper-button-prev{
-                //   display: block;
-                //   transition: all linear .5s;
-                // }
-                position: relative;
-                overflow: hidden;
-                &:hover .swiper-button-next{
-                    right: 10px;
-                    transition: all .5s ease-in-out;
-                }       
-                &:hover .swiper-button-prev{
-                    left: 10px;
-                    transition: all .5s ease-in-out;
-                }        
-                 .card_preview{
-                    height: 200px;
-                    width: 100%;
-                    img{
-                        height: 100%;
-                        width: 100%;
-                        object-fit: cover;
-                    }
-                 }
-                 .swiper-button-prev{
-                    height: 30px;
-                    width: 30px;
-                    background-color: #f3f3f3bf;
-                    border-radius: 50%;
-                    left: -30px;
-                    &::after{
-                        font-size: 15px;
-                        color: #504d4d;
-                    }
+            object-fit: cover;
+          }
+        }
+        .swiper-button-prev {
+          height: 30px;
+          width: 30px;
+          background-color: #f3f3f3bf;
+          border-radius: 50%;
+          left: -30px;
+          &::after {
+            font-size: 15px;
+            color: #504d4d;
+          }
+        }
+        .swiper-button-next {
+          height: 30px;
+          width: 30px;
+          background-color: #f3f3f3bf;
+          border-radius: 50%;
+          right: -30px;
 
-                 }
-                 .swiper-button-next{
-                    height: 30px;
-                    width: 30px;
-                    background-color: #f3f3f3bf;
-                    border-radius: 50%;
-                    right: -30px;
-
-                    &::after{
-                        font-size: 15px;
-                        color: #504d4d;
-                    }
-                 }
-                 .swiper-pagination{
-                    text-align: end;
-                    padding-right: 10px;
-                    .swiper-pagination-bullet{
-                        background-color: #2257c9;
-                    }
-                 }
+          &::after {
+            font-size: 15px;
+            color: #504d4d;
+          }
+        }
+        .swiper-pagination {
+          text-align: end;
+          padding-right: 10px;
+          .swiper-pagination-bullet {
+            background-color: #ffffff;
+          }
+        }
+      }
+      .card_content {
+        padding: 15px;
+        h5 {
+          font-size: 16px;
+          font-weight: 600;
+          color: $blackColor;
+          line-height: 22px;
+        }
+        p {
+          color: rgb(68, 67, 67);
+          line-height: 20px;
+          padding-top: 5px;
+        }
+        .pricing {
+          font-size: 22px;
+          font-weight: 700;
+          color: $primaryColor;
+          padding-top: 10px;
+          font-family: "Merriweather", serif;
+          span {
+            font-weight: 400;
+            font-size: 16px;
+          }
+        }
+        .buy_btn {
+          position: absolute;
+          bottom: 4px;
+          left: 0;
+          padding: 10px 15px;
+          width: 100%;
+          cursor: pointer;
+          .btn {
+            height: 35px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $whiteColor;
+            font-size: 15px;
+            font-weight: 400;
+            border-radius: 6px;
+            border: 1px solid $primaryColor;
+            background-color: $primaryColor;
+            font-family: "Merriweather", serif;
+            &:hover {
+              background-color: #0b4975;
+              color: $whiteColor;
             }
-            .card_content{
-                padding: 15px;
-                 h5{
-                    font-size: 16px;
-                    font-weight: 600;
-                    color: $blackColor;
-                    line-height: 22px;
-                 }
-                 p{
-                    color: rgb(68, 67, 67);
-                    line-height: 20px;
-                    padding-top: 5px;
-                 }
-                 .pricing{
-                    font-size: 22px;
-                    font-weight: 700;
-                    color: $primaryColor;
-                    padding-top: 10px;
-                    font-family: "Merriweather",serif;
-                    span{
-                        font-weight: 400;
-                        font-size: 16px;
-                        
-                    }
-                 }
-                 .buy_btn{
-                    position: absolute;
-                    bottom: 2px;
-                    left: 0;
-                    padding: 10px 15px;
-                    width: 100%;
-                    cursor: pointer;
-                    .btn{
-                        height:35px;
-                        width: 100%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        color: $whiteColor;
-                        font-size: 15px;
-                        font-weight: 400;
-                        border-radius: 8px;
-                        border: 1px solid $primaryColor;
-                        background-color: $primaryColor;
-                        font-family: "Merriweather",serif;
-                        &:hover{
-                            background-color: #0b4975;
-                            color: $whiteColor;
-                        }
-                    }
-
-                 }
-            }
-         }
+          }
+        }
+      }
     }
+  }
 }

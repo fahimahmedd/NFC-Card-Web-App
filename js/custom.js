@@ -1,5 +1,4 @@
 $(function () {
-
   var swiper = new Swiper(".heroSwipper", {
     spaceBetween: 5,
     effect: "fade",
@@ -27,25 +26,49 @@ $(function () {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
   });
 
   // Review Swipper
-  var swiper = new Swiper(".reviewSwipper", {
-    spaceBetween: 30,
-    loop: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    // pagination: {
-    //   el: ".swiper-pagination",
-    //   clickable: true,
-    // },
-    autoplay: {
-      delay: 3500,
-      disableOnInteraction: false,
-    },
-  });
+  // var swiper = new Swiper(".reviewSwipper", {
+  //   spaceBetween: 30,
+  //   loop: true,
+  //   navigation: {
+  //     nextEl: ".swiper-button-next",
+  //     prevEl: ".swiper-button-prev",
+  //   },
+  //   autoplay: {
+  //     delay: 3500,
+  //     disableOnInteraction: false,
+  //   },
+  // });
+ 
+ // Question Category Slider
+ var swiper = new Swiper(".reviewSwiper", {
+  slidesPerView: "auto",
+  spaceBetween: 22,
+  centeredSlides: true,
+  loop:true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 0,
+    pauseOnMouseEnter: true,
+    disableOnInteraction: false,
+    reverseDirection: false,         // added
+},
+speed: 8000,
+});
+
 
   // Back to Top 
   var btn = $('.backtotop');
