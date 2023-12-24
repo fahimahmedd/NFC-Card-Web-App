@@ -48,8 +48,9 @@
     position: relative;
     z-index: 2;
     .footer_content {
-        background: linear-gradient(170deg, #2D3140 0%, #19272C 100%);
-        border-top-left-radius: 150px;
+        // background: linear-gradient(170deg, #2D3140 0%, #19272C 100%);
+        background-image: linear-gradient(to right, #04385d, #033e67, #024371, #02497b, #024f85);
+        border-top-left-radius: 150px; 
         border-top-right-radius: 150px;
         padding-bottom: 80px;
         .footer_wrapper {
