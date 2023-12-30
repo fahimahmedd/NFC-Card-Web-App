@@ -35,22 +35,41 @@
     <div class='header'>
         <div class="container">
             <div class="header_wrapper">
-                <div class="header_logo">
-                    <img src='./images/logo.png' alt="" />
-                </div>
+                <a href="index.html">
+                    <div class="header_logo">
+                        <img src='./images/logo.png' alt="" />
+                    </div>
+                </a>
                 <div class="header_content">
-                    <ul>
+                    <ul class="d-lg-block d-none">
                         <li><a href="index.html"> Home </a></li>
                         <li><a href="#about"> About </a></li>
                         <li><a href="#contact"> Contact </a></li>
                     </ul>
-                    <a href="https://icircles.app/app/login" target="_blank">
+                    <a href="https://icircles.app/app/login" target="_blank" class="d-lg-block d-none">
                         <div class="login_btn">
                             Login
                         </div>
                     </a>
                 </div>
+                <div class="hamburegr d-lg-none d-block">
+                    <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
             </div>
+        </div>
+    </div>
+
+
+    <!------ Offcanvas Part  Start  -------->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          
         </div>
     </div>
     <!------------------------------------------
@@ -745,7 +764,7 @@
             <div class="container">
                 <div class="follow_wrapper">
                     <div class="row align-items-center">
-                        <div class="col-lg-3 p-0">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6 p-0">
                             <a href="https://www.facebook.com/icirclesapp">
                                 <div class="follow_item">
                                     <img src='./images/facebook.png' alt="" />
@@ -758,7 +777,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-lg-3 p-0">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6 p-0">
                             <a href="#">
                                 <div class="follow_item">
                                     <img src='./images/whatsapp.png' alt="" />
@@ -771,7 +790,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-lg-3 p-0">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6 p-0">
                             <a href="#">
                                 <div class="follow_item">
                                     <img src='./images/linkedin.png' alt="" />
@@ -784,7 +803,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-lg-3 p-0">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6 p-0">
                             <a href="#">
                                 <div class="follow_item border_none">
                                     <img src='./images/twitter.png' alt="" />

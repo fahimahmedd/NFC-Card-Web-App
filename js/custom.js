@@ -53,19 +53,7 @@ $(function () {
     },
   });
 
-  // Review Swipper
-  // var swiper = new Swiper(".reviewSwipper", {
-  //   spaceBetween: 30,
-  //   loop: true,
-  //   navigation: {
-  //     nextEl: ".swiper-button-next",
-  //     prevEl: ".swiper-button-prev",
-  //   },
-  //   autoplay: {
-  //     delay: 3500,
-  //     disableOnInteraction: false,
-  //   },
-  // });
+
  
  // Question Category Slider
  var swiper = new Swiper(".reviewSwiper", {
@@ -80,6 +68,20 @@ $(function () {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    240: {
+      slidesPerView: 1,
+      spaceBetween: 15,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: "auto",
+      spaceBetween: 20,
+    },
   },
   autoplay: {
     delay: 0,
