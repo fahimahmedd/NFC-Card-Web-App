@@ -1,4 +1,25 @@
 $(function () {
+
+  // Counter
+  $(document).ready(function() {
+    $('.minus').click(function () {
+      var $input = $(this).parent().find('input');
+      var count = parseInt($input.val()) - 1;
+      count = count < 1 ? 1 : count;
+      $input.val(count);
+      $input.change();
+      return false;
+    });
+    $('.plus').click(function () {
+      var $input = $(this).parent().find('input');
+      $input.val(parseInt($input.val()) + 1);
+      $input.change();
+      return false;
+    });
+  });
+
+
+  // Hero Swipper
   var swiper = new Swiper(".heroSwipper", {
     spaceBetween: 5,
     effect: "fade",
@@ -64,11 +85,31 @@ $(function () {
     delay: 0,
     pauseOnMouseEnter: true,
     disableOnInteraction: false,
-    reverseDirection: false,         // added
+    reverseDirection: false,      
 },
 speed: 8000,
 });
 
+
+// Webcard Swipper Js
+var swiper = new Swiper(".mySwiper", {
+  loop: true,
+  spaceBetween: 8,
+  slidesPerView: 5,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".mySwiper2",{
+  loop: true,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiper,
+  },
+});
 
   // Back to Top 
   var btn = $('.backtotop');

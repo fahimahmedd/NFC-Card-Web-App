@@ -5,18 +5,19 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-body{
+html{
   scroll-behavior: smooth;
-  background-color: #ffffff;
+}
+body{
+  background-color: #F7F7F7;
   // Default Font Style
   font-weight: 400;
   font-size: 16px;
   color: #333333;
   line-height: 24px;
-  font-family:'Roboto', sans-serif;
+  // font-family:'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   // font-family: 'Merriweather', serif;
-
 }
 :root{
   --swiper-navigation-size: auto;
